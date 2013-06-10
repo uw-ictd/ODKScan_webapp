@@ -17,6 +17,9 @@ Full setup directions:
 Start with 32bit ubuntu 12.04 LTS
 (Older versions might not have the OpenCV apt package)
 
+This walkthrough assumes your username is ubuntu.
+If it's not you will need to change the filepaths.
+
 ### Install these dependencies:
 
 ```bash
@@ -135,7 +138,7 @@ Edit your httpd.conf file like so:
 ```bash
 sudo pico /etc/apache2/httpd.conf
 ```
-so that it contains this:
+so that it contains something like this:
 
 ```xml
 #Need to set the apache user so we have permissions to write/access files.
