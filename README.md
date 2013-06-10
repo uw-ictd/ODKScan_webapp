@@ -21,7 +21,7 @@ Start with 32bit ubuntu 12.04 LTS
 
 ```bash
 sudo apt-get update 
-sudo apt-get install git python-setuptools python-imaging supervisor
+sudo apt-get install git python-setuptools python-imaging supervisor libopencv-dev
 ```
 
 ### Install Django:
@@ -51,10 +51,9 @@ cd ODKScan_webapp
 sudo pip install -r requirements.pip
 ```
 
-### Install OpenCV and compile ODKScan-core:
+### Compile ODKScan-core:
 
 ```bash
-sudo apt-get install libopencv-dev
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 # assuming you have a bashrc
 echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib' >> ~/.bashrc
